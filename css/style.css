@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.max-width{
+    width: 1080px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+   
+}
+
+/* estilos del header */
+header{
+    background-image: var(--gradiant-blue);
+    height: 200px;
+}
+.header-content{
+    height: 150px;
+}
+.logo-uas{
+    width: 200px;
+}
+.header-top img.logo-img{
+    position: absolute;
+    top: 0;
+    height: 150px;
+}
+.header-top img.logo-c{
+    height: 120px;
+  position: absolute;
+  float: right;
+  display: flex;
+  right: 0;
+  top: 0;
+}
+.header-left h3{
+    font-size: 30px;
+}
+
+.header-c{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+    flex-direction: row !important;
+    /* position: absolute; */
+    float: right !important;
+}
+
+.logo-uas{
+    height: 150px;
+}
+
+.header-uni{
+    background-image: var(--gradiant-blue-left);
+    height: 30px;
+}
+
+.header-nav{
+    height: 40px;
+}
+.header-nav ul {
+    display: flex;
+    list-style: none;
+}
+.header-nav ul li a {
+    color: #fff;
+
+}
+
+
+
+
+:root{
+    --gradiant-blue: linear-gradient( to right, #1d71b8, #003595);
+    --gradiant-blue-left: linear-gradient(to left,  #1d71b8, #003595);
+    --max-witdh: 1080px;
+    
+}
