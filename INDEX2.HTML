@@ -1,0 +1,161 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Combinada</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .left-column .box, .right-column .box {
+            border: 1px solid #999;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .welcome-box {
+            background-color: #29abe2;
+            color: whitesmoke;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        .social-box {
+            background-color: #cb9700;
+            color: #fff;
+            max-height: 200px;
+        }
+        .magazine-box {
+            background-color: #eddba6;
+            color: white;
+        }
+        .announcement-box {
+            background-color: #29abe2;
+            color: #fff;
+        }
+        .news-box {
+            background-color: #29abe2;
+            color: #fff;
+            flex: 1 1 100%;
+            min-height: 320px;
+        }
+        .section-box {
+            background-color: #cb9700;
+            color: #fff;
+            flex: 1 1 70%;
+            height: 400px;
+
+        }
+        
+        .welcome-box h2, .social-box h2, .magazine-box h2, .announcement-box h2, 
+        .news-box h2, .section-box h2 {
+            font-weight: 700;
+            display: flex; 
+            align-items: center; 
+            justify-content: left;
+             text-align: right; 
+        }
+        .social-box .facebook-btn, .magazine-box .leer-btn {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .social-box .facebook-btn:hover, .magazine-box .leer-btn:hover {
+            background-color: #004494;
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .news-box .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+            text-align: center;
+            align-content: center; 
+        }
+        .welcome-box .logo{ 
+            width: 300px; 
+           height: 300px; 
+         }
+    </style>
+</head>
+<body>
+    <!-- Cuadro de Bienvenidos --> 
+     <div class="box welcome-box"> 
+        <img src="bienvenidos.png" alt="Bienvenidos" class="logo">
+         <h2>BIENVENIDOS</h2> 
+     </div>
+     </div>
+    <div class="container">
+        <div class="left-column">
+            <!-- Cuadro de Revista de Enfermería -->
+            <div class="box magazine-box">
+                <img src="revista.png" alt="Revista de Enfermería" class="logo">
+                <h2>REVISTA DE ENFERMERÍA</h2>
+                
+                <a href="#" class="leer-btn">Leer</a>
+            </div>
+
+            <!-- Cuadro de Noticias (más largo y más alto) -->
+            <div class="box news-box">
+                <img src="Logovision2025.png" alt="Logo Vision 2025" class="logo">
+                <h2>NOTICIAS</h2>
+                
+            </div>
+        </div>
+
+        <div class="right-column">
+            <!-- Cuadro de Redes Sociales -->
+            <div class="box social-box">
+                <h2>Síguenos en Redes Sociales</h2>
+                <a href="https://www.facebook.com/TuPagina" target="_blank" class="facebook-btn">Facebook</a>
+            </div>
+
+            <!-- Cuadro de Convocatorias -->
+            <div class="box announcement-box">
+                <img src="LogoUAS.png" alt="Logo UAS" class="logo">
+                <h2>CONVOCATORIAS</h2>
+                </div>
+
+            <!-- Cuadro de Secciones Varias -->
+            <div class="box section-box">
+                <h2>BECAS</h2>
+               
+                <h2>EVENTOS ACADÉMICOS</h2>
+                
+                <h2>BOLSA DE TRABAJO</h2>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
