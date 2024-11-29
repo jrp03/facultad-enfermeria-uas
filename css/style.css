@@ -7,6 +7,9 @@ url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&disp
     box-sizing: border-box;
 }
 
+html{
+    background: #eee;
+}
 body{
     display: flex;
     margin: auto;
@@ -148,12 +151,17 @@ nav ul li a{
 
 main{
     /* your code here */
-    padding-bottom: 150px;
+    padding-bottom: 0;
 }
 .container{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background:#fff;
+    z-index: -999;
+    padding: 10px;
+    box-shadow: 0 0 2px 0 grey;
+    padding-bottom: 100px;
 }
 .welcome{
     display: flex;
@@ -437,9 +445,10 @@ footer{
 .footer-info{
     display: flex;
     justify-content: space-between;
-    background:#eddba6;
+    /* background:#eddba6; */
     padding: 30px 10px;
     gap: 10px;
+    background:#ffF;
 }
 .footer-container{
     background-color:#f1ebd5;
@@ -454,7 +463,10 @@ footer{
     display: flex;
     flex-direction: column;
     /* gap: 10px; */
-    color:blue;
+    /* color:blue; */
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
 }
 .col span{
     padding: 10px;
