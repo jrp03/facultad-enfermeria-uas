@@ -43,13 +43,19 @@ header{
     
 }
 
-
 .header{
-    display: flex;
-    background-image: linear-gradient(to right,#1d71b8, #003595);
     flex-wrap: wrap;
     flex-direction: column;
+
+}
+.header-p {
+    display: flex;
+    background-image: linear-gradient(to right,#1d71b8, #003595);
     /* align-items: center; */
+}
+.header-responsive{
+    display: flex;
+    flex-direction: column;
 }
 .header-top{
     height: 120px;
@@ -106,11 +112,18 @@ header{
     align-items:center;
     /* text-align: center; */
 }
+.center-box{
+    display: flex;
+    height: 30px;
+    background: #b89d2b;
+    align-items:center;
+    
+}
 .h-t{
     display: flex;
 }
 .header-center-title span{
-    font-weight: bolder;
+    font-weight: 300;
     letter-spacing: 18px;
 }
 
@@ -360,9 +373,122 @@ footer{
 
 
 
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.logos img{
+    /* width: 100px; */
+}
+
+.logos .logo1{
+    display: flex;
+    height: auto;
+    width: 90px;
+    height: 100px;
+}
+
+.logos .logo2{
+    height: 80px;
+    width:  100px;
+}
+.logos-facultad {
+    display: flex;
+    height: 80px;
+    width: 100px;
+}
+.logos-facultad .lgos-fondo{
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content: center;
+    /* height: 80px; */
+}
+.logos-facultad .facultad-logo{
+    position: absolute;
+    width: 70px;
+}
+.logo-principal{
+    display: flex;
+    justify-content: center;
+
+    align-items:center;
+}
+
+.header-responsive{
+    display: none;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    padding-bottom: 30px;
+    padding-top: 90px;
+    text-align: center;
+}
+.content-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content-header label {
+    cursor: pointer;
+}
+.content-header label img{
+    width: 40px;
+    height: 40px;
+}
+
+.menu-list{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background:#b89d2b;
+    width: 100%;
+    height: auto;
+    
+    
+    animation-duration: 3s;
+}
+.menu-list li{
+    display: flex;
+    flex-direction: column;
+}
+.menu-list li a{
+    color:#fff;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    text-decoration:none;
+    border-bottom:1px solid #fff;
+}
+.menu-list li a:hover{
+    background: rgba(0,0,0,0.2);
+}
+
+#menu-bar:checked ~ .menu-list{ 
+    display: flex;
+}
 
 /*--------------------------
 
-    MEDIA SCREEN
++++++++MEDIA SCREEN+++++++++
 
 --------------------------*/
+/* tamaño de smartphone */
+@media screen and (max-width: 767px){
+    .header, .header-nav {
+        display: none;
+    }
+    .header-responsive{
+        display: flex;
+        /* position: ; */
+    }
+    
+    .header-top{
+        height:auto;
+    }
+}
