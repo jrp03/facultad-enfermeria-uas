@@ -342,7 +342,16 @@ main{
     height: 100%;
     align-content: center;
     box-shadow: 0 0 200px 0 black;
-  }
+}
+#slide .arrow img{
+    font-size: 20px;
+}
+.icon-circle-left{
+}
+.icon-circle-left{
+
+}
+
   #slide #prev {
     left: 0;
   }
