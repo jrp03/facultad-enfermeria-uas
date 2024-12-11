@@ -702,6 +702,10 @@ footer{
     .box-card img{
         height: 390px;
     }
+    .foter-columns{
+        flex-direction: column;
+        align-items:center;
+    }
 }
 
 
