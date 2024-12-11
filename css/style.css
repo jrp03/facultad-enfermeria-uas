@@ -701,6 +701,7 @@ footer{
     }
     .box-card img{
         height: 390px;
+        width: 100%;
     }
     .foter-columns{
         flex-direction: column;
