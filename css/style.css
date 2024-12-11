@@ -343,6 +343,9 @@ main{
     align-content: center;
     box-shadow: 0 0 200px 0 black;
 }
+#slide .arrow:hover {
+    background: rgba(0,0,0,0.8);
+}
 #slide .arrow img{
     font-size: 20px;
 }
@@ -369,8 +372,10 @@ main{
     left: 0;
     z-index: 1;
     bottom: 0px;
-    height: 30px;
+    height: 35px;
+    align-content:center;
     /* filter: blur(19px); */
+    background:rgba(0,0,0,.5);
 }
   #slide #paginacion li {
     display: inline-block;
@@ -416,11 +421,20 @@ main{
     align-items: center;
     max-width: 940px;
     margin: 0 auto;
+    width: 100%;
+}
+.main-frame{
+    align-items: initial;
+}
+.video-frame{
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 .box-cards{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    flex-direction: column;
 }
 .box-card{
     width:  300px;
@@ -429,6 +443,29 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.link-more{
+    box-shadow: none;   
+    justify-content: center;
+    align-items: center;
+}
+.link-more a{
+    background:#003595; 
+    padding:10px ;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+}
+.link-more a img{
+    font-size: 5px;
+}
+.box-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box-content a{
+    color:#003595;
 }
 .box-cards .wrap{
     display: flex;
