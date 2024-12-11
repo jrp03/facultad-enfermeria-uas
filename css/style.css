@@ -413,6 +413,9 @@ main{
     gap: 20px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
+    align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
 }
 .box-cards{
     display: flex;
@@ -420,14 +423,28 @@ main{
     gap: 20px;
 }
 .box-card{
-    width:  200px;
+    width:  300px;
     box-shadow: 0 0 2px 0 grey;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
+.box-cards .wrap{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+}
+.box-card span {
+    color: #AF8514;
+}
+.box-card img{
+    height: 200px;
+    object-fit: cover;
+}
 
 .contacto{
     display:flex;
@@ -675,5 +692,7 @@ footer{
         height:auto;
     }
 
-    
+    .box-cards .wrap{
+        justify-content: center;
+    }
 }
