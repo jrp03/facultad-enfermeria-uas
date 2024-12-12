@@ -7,7 +7,7 @@
 }
 
 html{
-    background: #eee;
+    /* background: #eee; */
 }
 body{
     display: flex;
@@ -161,6 +161,7 @@ nav ul li a{
 main{
     /* your code here */
     padding-bottom: 0;
+    background: #eee;
 }
 .container{
     display: flex;
@@ -390,8 +391,8 @@ main{
   }
 
 .container-box{
-    display: grid;
-    grid-template-rows: auto;
+    display: flex;
+    /* grid-template-rows: auto; */
     margin-top: 10px;
 
 
@@ -409,6 +410,9 @@ main{
     }
     
 }
+.noticias-box{
+    max-width: 300px;
+}
 
 
 /* elementos */
@@ -422,6 +426,9 @@ main{
     max-width: 940px;
     margin: 0 auto;
     width: 100%;
+}
+.box-elements h1{
+    color: #003595;
 }
 .main-frame{
     align-items: initial;
@@ -443,6 +450,10 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.main-frame-card{
+    padding: 20px;
+    box-shadow: 0 0 2px 0 grey;
 }
 .link-more{
     box-shadow: none;   
@@ -516,6 +527,10 @@ main{
 footer{
     /* display: flex */
    box-shadow: 0 0 20px 0 grey;
+   height: 520px;
+   position: sticky;
+   bottom: 0;
+   z-index: -999;
 }
 
 .footer-info{
