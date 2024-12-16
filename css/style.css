@@ -460,6 +460,10 @@ main{
     flex-direction: column;
     gap: 10px;
 }
+.noticias-content .box-card{
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+}
 .box-card h3{
     font-size: 15px;
 }
