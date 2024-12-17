@@ -413,11 +413,14 @@ main{
 .noticias-box{
     max-width: 200px;
     position: relative;
-    padding: 10px;
-    background-color: #fff;
+    /* padding: 10px; */
+    /* background-color: #fff; */
 }
 /* .noticias-box .box-elements{
     align-content: auto !important;
+} */
+/* .noticias-box .box-elements {
+    padding: 10px;
 } */
 
 /* elementos */
@@ -431,6 +434,7 @@ main{
     max-width: 940px;
     margin: 0 auto;
     width: 100%;
+    box-shadow: 1px 1px 6px 0px gray;
 }
 .box-elements h1{
     color: #003595;
@@ -456,6 +460,9 @@ main{
     gap: 20px;
     flex-direction: column;
 }
+.align-box-cards{
+    max-width: 620px;
+}
 .box-card{
     width:  300px;
     box-shadow: 0 0 2px 0 grey;
@@ -480,6 +487,7 @@ main{
     display: grid;
     justify-content: space-between;
     grid-template-columns: 2fr 1fr;
+    flex-wrap: nowrap;
 }
 .link-more{
     box-shadow: none;   
@@ -513,11 +521,17 @@ main{
     /* max-width: 1000px; */
     margin: 0 auto;
 }
+.main-frame-box{
+    display: flex;
+    flex-direction: column;
+}
 .noticias-box .wrap {
     flex-direction: column;
 }
 .noticias-box .box-elements{ 
     display: flex;
+    background:#fff;
+    padding: 10px;
 }
 .noticias-box .box-card {
     width: auto;
@@ -794,7 +808,7 @@ footer{
         height:auto;
     }
 
-    .wrap{
+    /* .wrap{
         justify-content: center;
     }
 
@@ -804,7 +818,7 @@ footer{
     .box-card img{
         height: 390px;
         width: 100%;
-    }
+    } */
     .foter-columns{
         flex-direction: column;
         align-items:center;
@@ -816,8 +830,11 @@ footer{
     /* .box-cards .wrap{
         justify-content: center;
     } */
+     .container-box{
+        margin: 10px auto 10px auto;
+     }
     .box-elements{
-        max-width: 620px;
+        /* max-width: 620px; */
     }
     #slide ul li img{
         max-width:100%;
@@ -833,5 +850,13 @@ footer{
         /* bottom:40px; */
         height: 100%;
         justify-content: center;
+    }
+
+    .main-frame-card{
+        display: flex;
+    }
+    .main-video-frame{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
     }
 }
