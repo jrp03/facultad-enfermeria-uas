@@ -5,6 +5,9 @@
     font-family:Roboto;
     box-sizing: border-box;
 }
+::before, ::after{
+    box-sizing: border-box;
+}
 
 html{
     /* background: #eee; */
@@ -434,7 +437,7 @@ main{
     max-width: 940px;
     margin: 0 auto;
     width: 100%;
-    box-shadow: 1px 1px 6px 0px gray;
+    box-shadow: 1px 1px 6px 0px #ddd;
 }
 .box-elements h1{
     color: #003595;
@@ -473,6 +476,9 @@ main{
 }
 .align-box-cards{
     max-width: 620px;
+}
+.convocatorias h3{
+    height: 10%;
 }
 .servicios{
 
@@ -555,14 +561,14 @@ main{
 }
 .box-card img{
     width: 100%;
-    height: auto;
+    height: 480px;
     object-fit: cover;
 }
 .noticias-content .box-card img{
     height: 120px;
 }
 .main-frame-card img{   
-    width: 100%;
+    width: 250px;
     height: auto;
 }
 
@@ -606,9 +612,9 @@ footer{
     /* display: flex */
    box-shadow: 0 0 20px 0 grey;
    height: 520px;
-   position: sticky;
+   /* position: sticky; */
    bottom: 0;
-   z-index: -999;
+   /* z-index: -999; */
 }
 
 .footer-info{
@@ -858,18 +864,26 @@ footer{
         gap: 20px;
         max-width: 1000px;
         margin: 0 auto;
+        justify-content: center;
       }
       .noticias-box .wrap{
         flex-direction: initial;
         justify-content: center;
       }
+      .noticias-content .box-card h3{
+        text-align: justify;
+        display: -webkit-box;
+        -webkit-line-clamp: vertical;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
 }
 
 @media screen and (max-width: 850px){
     
-    .servicios .box-card{
-        width: 100%;
-    
+    .box-cards .wrap{
+        justify-content: center;
     }
 }
 
