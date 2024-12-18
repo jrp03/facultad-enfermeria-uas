@@ -851,6 +851,9 @@ footer{
         max-width: 1000px;
         margin: 0 auto;
       }
+      .noticias-box .wrap{
+        flex-direction: initial;
+      }
 }
 
 @media screen and (max-width: 850px){
