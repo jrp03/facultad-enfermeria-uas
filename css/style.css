@@ -462,6 +462,14 @@ main{
 }
 .box-card p{
     height: 100%;
+    text-align: justify;
+    height: 100%;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: vertical;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .align-box-cards{
     max-width: 620px;
@@ -581,7 +589,7 @@ main{
 
 
 .main-box {
-    padding: 10px;
+    padding: 20px;
     background:#fff ;
 }
 
@@ -853,6 +861,7 @@ footer{
       }
       .noticias-box .wrap{
         flex-direction: initial;
+        justify-content: center;
       }
 }
 
@@ -868,11 +877,14 @@ footer{
     /* .box-cards .wrap{
         justify-content: center;
     } */
+    .servicios .box-card{
+        width: 100%;
+    }
      .container-box{
-        margin: 10px auto 10px auto;
+        margin: auto;
      }
     .box-elements{
-        /* max-width: 620px; */
+        max-width: 100%;
     }
     #slide ul li img{
         max-width:100%;
