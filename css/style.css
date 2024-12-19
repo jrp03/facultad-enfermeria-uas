@@ -611,7 +611,7 @@ main{
 footer{
     /* display: flex */
    box-shadow: 0 0 20px 0 grey;
-   height: 520px;
+   /* height: 520px; */
    /* position: sticky; */
    bottom: 0;
    /* z-index: -999; */
