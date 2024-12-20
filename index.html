@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enfermería UAS</title>
+    <link rel="shortcut icon" href="img/facultad_medicina.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -90,39 +91,6 @@
         </div>
     </header>
     <main class="main">
-        
-        <!-- <section class="welcome">
-            <div class="welcome-box max-width">
-                <div class="w-left">
-                    <img height="" src="img/person_enfermeria.jpg" alt="No Sourse">
-                </div>
-                <div class="w-rigth">
-                    <h1>
-                        Bienvenidos a la Facultad de Enfermería de la 
-                        Universidad Autónoma de Sinaloa
-                    </h1>
-                    <span>
-                        Comprometidos con la excelencia en la formación de profesionales de la salud, 
-                        preparados para afrontar los desafíos del cuidado integral y humano.
-                    </span>
-                    <span>
-                        Nuestro compromiso es formar profesionales de la salud con excelencia académica, 
-                        preparados para enfrentar los desafíos del mundo actual. Únete a nuestra comunidad y 
-                        sé parte de una tradición de liderazgo en educación y cuidado.
-                    </span>
-                </div>
-            </div>
-            <div class="welcome-links max-width">
-                <ul>
-                    <li><a href="">Conocenos</a></li>   |
-                    <li><a href="">Programas academicos</a></li>|
-                    <li><a href="">Inscribete ahora</a></li>|
-                    <li><a href="">Noticias Y Eventos</a></li>
-                </ul>
-            </div>
-        </section> -->
-
-
         <div class="banner" >
             <div class="banner-content max-width">
                 <div class="contendor" id="slide">
@@ -243,14 +211,14 @@
                                         <a href="">Leer más...</a>
                                     </div>
                                 </div> 
-                                <!-- <div class="box-card">
+                                <div class="box-card">
                                     <span>Diciembre 10, 2024 </span>
                                     <img src="photos/La Escuela de Ciencias de la Comunicación.jpg" alt="">
                                     <h3>La Escuela de Ciencias de la Comunicación de la UAS cierra una extensa e intensa serie de actividades en el marco de los 16 Días de Activismo</h3>
                                     <div class="btn-mas">
                                         <a href="">Leer más...</a>
                                     </div>
-                                </div> -->
+                                </div>
                                 
 
                             </div>
@@ -352,41 +320,50 @@
                                     <div class="btn-mas">
                                         <a href="https://carreras.uas.edu.mx/">Oferta Educativa</a>
                                     </div>
-                                </div>
-                                <!-- <div class="box-card"> -->
-                                    <!-- <span>Diciembre 10, 2024 </span> -->
-                                    <!-- <img src="" alt=""> -->
-                                    <!-- <h2>Bolsas de Trabajo</h2> -->
-                                    <!-- <h3>Departamento Bolsa de Trabajo UAS</h3>
-                                    <p>
-                                        En los últimos años el interés del sector laboral ha incrementado en los alumnos y egresados de la Universidad Autónoma de Sinaloa ofertando espacios para que realicen una estancia de prácticas profesionales logrando con esto que nuestros alumnos tengan su primera experiencia laboral en la cual acompañados de un asesor ponen en práctica todo lo aprendido a lo largo de su carrera. 
-                                    </p> -->
-                                    
-                                    <!-- <div class="btn-mas"> -->
-                                        <!-- <a href="https://dgvri.uas.edu.mx/bolsadetrabajouas.php">Leer más...</a> -->
-                                    <!-- </div> -->
-                                <!-- </div> -->
-                                <!-- <div class="box-card"> -->
-                                    <!-- <span>Diciembre 10, 2024 </span> -->
-                                    <!-- <img src="" alt=""> -->
-                                    <!-- <h2>Eventos Academicos</h2> -->
-                                    <!-- <p>
-                                        13 tipos de eventos académicos y científicos que debes conocer
-                                    </p> -->
-                                    <!-- <div class="btn-mas"> -->
-                                        <!-- <a href="https://blog.even3.com/13-tipos-de-eventos-academicos-y-cientificos-que-debes-conocer/">Leer más...</a> -->
-                                    <!-- </div> -->
-                                <!-- </div> -->
-                                 
+                                </div>                                
                                 
                             </div>
 
                         </div>
                     </section>
                 </div>
-                <!-- noticias -->
             </div>
         </div>        
+        
+        <div class="max-width form-contact">
+            <h1>Contactar</h1>
+            <form action="#" method="post">
+                <div class="form-content">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div>
+                        <label for="tipo_solicitud">Tipo de solicitud:</label>
+                        <select id="tipo_solicitud" name="tipo_solicitud" required>
+                            <option value="felicitacion">Felicitación</option>
+                            <option value="queja">Solicitud de queja</option>
+                            <option value="comentario">Comentario en general</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="descripcion">Descripción:</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
 
     </main>
     <footer>

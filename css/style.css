@@ -156,6 +156,105 @@ nav ul li a{
     font-weight: bolder;
 }
 
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.logos img{
+    /* width: 100px; */
+}
+
+.logos .logo1{
+    display: flex;
+    height: auto;
+    width: 90px;
+    height: 100px;
+}
+
+.logos .logo2{
+    height: 80px;
+    width:  100px;
+}
+.logos-facultad {
+    display: flex;
+    height: 80px;
+    width: 100px;
+}
+.logos-facultad .lgos-fondo{
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content: center;
+    /* height: 80px; */
+}
+.logos-facultad .facultad-logo{
+    position: absolute;
+    width: 70px;
+}
+.logo-principal{
+    display: flex;
+    justify-content: center;
+
+    align-items:center;
+}
+
+.header-responsive{
+    display: none;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    padding-bottom: 30px;
+    padding-top: 90px;
+    text-align: center;
+}
+.content-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content-header label {
+    cursor: pointer;
+}
+.content-header label img{
+    width: 40px;
+    height: 40px;
+}
+
+.menu-list{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background:#b89d2b;
+    width: 100%;
+    height: auto;
+    
+    
+    animation-duration: 3s;
+}
+.menu-list li{
+    display: flex;
+    flex-direction: column;
+}
+.menu-list li a{
+    color:#fff;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    text-decoration:none;
+    border-bottom:1px solid #fff;
+}
+.menu-list li a:hover{
+    background: rgba(0,0,0,0.2);
+}
+
+#menu-bar:checked ~ .menu-list{ 
+    display: flex;
+}
 
 
 
@@ -604,9 +703,61 @@ main{
 
 /* main container */
 
+.form-contact{
+    background: #fff;
+    box-shadow: 1px 1px 6px 0px #ddd;
+    padding: 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    background: #ffff;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+form .form-content{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+form .form-content > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form .form-content > div input{
+    padding:10px ;
+    border: none;
+    box-shadow: 0 0 5px 0 grey;
+    border-radius: 5px;
+}
+form .form-content > div input:focus{
+    outline: none;
+    box-shadow: 0 0 10px 0 grey;
+}
+form div button{
+    padding: 10px;
+    background: #003595;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.form-content div select{
+    padding: 10px;
+    border: none;
+    background: #fff;
+    box-shadow: 0 0 5px 0 grey;
+}
 
 
 
+/*  footer  */
 
 footer{
     /* display: flex */
@@ -700,106 +851,6 @@ footer{
 }
 
 
-
-.logos{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-.logos img{
-    /* width: 100px; */
-}
-
-.logos .logo1{
-    display: flex;
-    height: auto;
-    width: 90px;
-    height: 100px;
-}
-
-.logos .logo2{
-    height: 80px;
-    width:  100px;
-}
-.logos-facultad {
-    display: flex;
-    height: 80px;
-    width: 100px;
-}
-.logos-facultad .lgos-fondo{
-    display: flex;
-    position: relative;
-    align-items:center;
-    justify-content: center;
-    /* height: 80px; */
-}
-.logos-facultad .facultad-logo{
-    position: absolute;
-    width: 70px;
-}
-.logo-principal{
-    display: flex;
-    justify-content: center;
-
-    align-items:center;
-}
-
-.header-responsive{
-    display: none;
-}
-
-.header-menu{
-    display: flex;
-    justify-content: center;
-    align-items:end;
-    padding-bottom: 30px;
-    padding-top: 90px;
-    text-align: center;
-}
-.content-header{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.content-header label {
-    cursor: pointer;
-}
-.content-header label img{
-    width: 40px;
-    height: 40px;
-}
-
-.menu-list{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    z-index: 100;
-    background:#b89d2b;
-    width: 100%;
-    height: auto;
-    
-    
-    animation-duration: 3s;
-}
-.menu-list li{
-    display: flex;
-    flex-direction: column;
-}
-.menu-list li a{
-    color:#fff;
-    padding: 10px;
-    font-size: 20px;
-    display: flex;
-    text-decoration:none;
-    border-bottom:1px solid #fff;
-}
-.menu-list li a:hover{
-    background: rgba(0,0,0,0.2);
-}
-
-#menu-bar:checked ~ .menu-list{ 
-    display: flex;
-}
 
 
 
