@@ -651,6 +651,10 @@ main{
     display: flex;
     background:#fff;
     padding: 10px;
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+    height: 100vh;
 }
 .noticias-box .box-card {
     width: auto;
@@ -733,10 +737,47 @@ form .form-content > div input{
     border: none;
     box-shadow: 0 0 5px 0 grey;
     border-radius: 5px;
+    display: flex;
+    width: -moz-available;
 }
 form .form-content > div input:focus{
     outline: none;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 #003595;
+}
+form .form-content > div textarea{
+    padding:10px ;
+        border: none;
+        box-shadow: 0 0 5px 0 grey;
+        border-radius: 5px;
+}
+form .form-content > div textarea:focus{
+    outline: none;
+    box-shadow: 0 0 10px 0 #003595;
+    
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Eliminar las flechas en Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.form-telefono{
+    display: flex;
+    
+}
+.number{
+    display: flex;
+    width: 50px;
+}
+.telefono{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap:  10px;
 }
 form div button{
     padding: 10px;
@@ -751,8 +792,11 @@ form div button{
 .form-content div select{
     padding: 10px;
     border: none;
-    background: #fff;
+    background: #003595;
     box-shadow: 0 0 5px 0 grey;
+    color:#fff;
+    border-radius: 5px;
+    font-weight: 300;
 }
 
 
